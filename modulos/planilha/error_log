@@ -1,0 +1,42 @@
+[16-Jun-2023 09:59:52 America/Sao_Paulo] PHP Warning:  Undefined array key "acao" in /home/imperiosofas/public_html/sistema/modulos/planilha/ficha_produtos.php on line 3
+[16-Jun-2023 10:00:30 America/Sao_Paulo] PHP Warning:  Undefined array key "acao" in /home/imperiosofas/public_html/sistema/modulos/planilha/ficha_produtos.php on line 3
+[16-Jun-2023 10:03:58 America/Sao_Paulo] PHP Warning:  Undefined array key "acao" in /home/imperiosofas/public_html/sistema/modulos/planilha/ficha_produtos.php on line 3
+[16-Jun-2023 10:05:38 America/Sao_Paulo] PHP Warning:  Undefined array key "acao" in /home/imperiosofas/public_html/sistema/modulos/planilha/ficha_produtos.php on line 3
+[16-Jun-2023 10:25:38 America/Sao_Paulo] PHP Fatal error:  Uncaught Error: Call to undefined function clean() in /home/imperiosofas/public_html/sistema/modulos/planilha/ficha_produtos.php:8
+Stack trace:
+#0 {main}
+  thrown in /home/imperiosofas/public_html/sistema/modulos/planilha/ficha_produtos.php on line 8
+[16-Jun-2023 10:25:48 America/Sao_Paulo] PHP Fatal error:  Uncaught Error: Call to undefined function clean() in /home/imperiosofas/public_html/sistema/modulos/planilha/ficha_produtos.php:8
+Stack trace:
+#0 {main}
+  thrown in /home/imperiosofas/public_html/sistema/modulos/planilha/ficha_produtos.php on line 8
+[16-Jun-2023 10:25:51 America/Sao_Paulo] PHP Fatal error:  Uncaught Error: Call to undefined function clean() in /home/imperiosofas/public_html/sistema/modulos/planilha/ficha_produtos.php:8
+Stack trace:
+#0 {main}
+  thrown in /home/imperiosofas/public_html/sistema/modulos/planilha/ficha_produtos.php on line 8
+[16-Jun-2023 13:31:17 UTC] PHP Fatal error:  Cannot redeclare clean() (previously declared in /home/imperiosofas/public_html/sistema/modulos/planilha/ficha_produtos.php:8) in /home/imperiosofas/public_html/sistema/modulos/planilha/config.php on line 65
+[04-Jul-2023 16:52:44 America/Sao_Paulo] PHP Fatal error:  Uncaught mysqli_sql_exception: Table 'imperiosofas_loja.ficha_produtos_xls' doesn't exist in /home/imperiosofas/public_html/sistema/modulos/planilha/conteudo.php:32
+Stack trace:
+#0 /home/imperiosofas/public_html/sistema/modulos/planilha/conteudo.php(32): mysqli_query(Object(mysqli), 'Select id, cate...')
+#1 {main}
+  thrown in /home/imperiosofas/public_html/sistema/modulos/planilha/conteudo.php on line 32
+[04-Jul-2023 17:05:08 America/Sao_Paulo] PHP Fatal error:  Uncaught mysqli_sql_exception: Table 'imperiosofas_loja.ficha_produtos_xls' doesn't exist in /home/imperiosofas/public_html/sistema/modulos/planilha/conteudo.php:32
+Stack trace:
+#0 /home/imperiosofas/public_html/sistema/modulos/planilha/conteudo.php(32): mysqli_query(Object(mysqli), 'Select id, cate...')
+#1 {main}
+  thrown in /home/imperiosofas/public_html/sistema/modulos/planilha/conteudo.php on line 32
+[04-Jul-2023 17:14:45 America/Sao_Paulo] PHP Fatal error:  Uncaught mysqli_sql_exception: Table 'imperiosofas_loja.ficha_produtos_xls' doesn't exist in /home/imperiosofas/public_html/sistema/modulos/planilha/conteudo.php:32
+Stack trace:
+#0 /home/imperiosofas/public_html/sistema/modulos/planilha/conteudo.php(32): mysqli_query(Object(mysqli), 'Select id, cate...')
+#1 {main}
+  thrown in /home/imperiosofas/public_html/sistema/modulos/planilha/conteudo.php on line 32
+[04-Jul-2023 17:15:01 America/Sao_Paulo] PHP Fatal error:  Uncaught mysqli_sql_exception: Table 'imperiosofas_loja.ficha_produtos_xls' doesn't exist in /home/imperiosofas/public_html/sistema/modulos/planilha/conteudo.php:32
+Stack trace:
+#0 /home/imperiosofas/public_html/sistema/modulos/planilha/conteudo.php(32): mysqli_query(Object(mysqli), 'Select id, cate...')
+#1 {main}
+  thrown in /home/imperiosofas/public_html/sistema/modulos/planilha/conteudo.php on line 32
+[04-Jul-2023 17:15:03 America/Sao_Paulo] PHP Fatal error:  Uncaught mysqli_sql_exception: Table 'imperiosofas_loja.ficha_produtos' doesn't exist in /home/imperiosofas/public_html/sistema/modulos/planilha/conteudo.php:32
+Stack trace:
+#0 /home/imperiosofas/public_html/sistema/modulos/planilha/conteudo.php(32): mysqli_query(Object(mysqli), 'Select id, cate...')
+#1 {main}
+  thrown in /home/imperiosofas/public_html/sistema/modulos/planilha/conteudo.php on line 32

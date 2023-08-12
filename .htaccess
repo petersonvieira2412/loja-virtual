@@ -1,0 +1,88 @@
+<IfModule mod_rewrite.c>
+  RewriteEngine On
+  RewriteBase /sistema/
+  RewriteRule ^home?$ inicial.php [NC,L]
+  RewriteRule ^inicio?$ inicial.php [NC,L]
+  RewriteRule ^alerta?$ alerta.php [NC,L]
+  RewriteRule ^inicial?$ inicial.php [NC,L]
+  RewriteRule ^destaque?$ inicial.php?pag=destaque [NC,L]
+  RewriteRule ^destaque-([a-z0-9-]+)?$ inicial.php?pag=destaque&acao=$1 [NC,L]
+  RewriteRule ^destaque-([a-z,0-9,A-Z,_-]+)_([0-9]+)?$ inicial.php?pag=destaque&acao=$1&id=$2 [NC]
+  RewriteRule ^banners?$ inicial.php?pag=banners [NC,L]
+  RewriteRule ^banners-([a-z0-9-]+)?$ inicial.php?pag=banners&acao=$1 [NC,L]
+  RewriteRule ^banners-([a-z,0-9,A-Z,_-]+)_([0-9]+)?$ inicial.php?pag=banners&acao=$1&id=$2 [NC]
+  RewriteRule ^categorias?$ inicial.php?pag=categorias [NC,L]
+  RewriteRule ^categorias-([a-z0-9-]+)?$ inicial.php?pag=categorias&acao=$1 [NC,L]
+  RewriteRule ^categorias-([a-z,0-9,A-Z,_-]+)_([0-9]+)?$ inicial.php?pag=categorias&acao=$1&id=$2 [NC]
+  RewriteRule ^produtos?$ inicial.php?pag=produtos [NC,L]
+  RewriteRule ^produtos-([a-z0-9-]+)?$ inicial.php?pag=produtos&acao=$1 [NC,L]
+  RewriteRule ^produtos-([a-z,0-9,A-Z,_-]+)_([0-9]+)?$ inicial.php?pag=produtos&acao=$1&id=$2 [NC]
+  RewriteRule ^dev?$ inicial.php?pag=dev [NC,L]
+  RewriteRule ^dev-([a-z0-9-]+)?$ inicial.php?pag=dev&acao=$1 [NC,L]
+  RewriteRule ^dev-([a-z,0-9,A-Z,_-]+)_([0-9]+)?$ inicial.php?pag=dev&acao=$1&id=$2 [NC]
+  RewriteRule ^cores?$ inicial.php?pag=cores [NC,L]
+  RewriteRule ^cores-([a-z0-9-]+)?$ inicial.php?pag=cores&acao=$1 [NC,L]
+  RewriteRule ^cores-([a-z,0-9,A-Z,_-]+)_([0-9]+)?$ inicial.php?pag=cores&acao=$1&id=$2 [NC]
+  RewriteRule ^tamanhos?$ inicial.php?pag=tamanhos [NC,L]
+  RewriteRule ^tamanhos-([a-z0-9-]+)?$ inicial.php?pag=tamanhos&acao=$1 [NC,L]
+  RewriteRule ^tamanhos-([a-z,0-9,A-Z,_-]+)_([0-9]+)?$ inicial.php?pag=tamanhos&acao=$1&id=$2 [NC]
+  RewriteRule ^blog?$ inicial.php?pag=blog [NC,L]
+  RewriteRule ^blog-([a-z0-9-]+)?$ inicial.php?pag=blog&acao=$1 [NC,L]
+  RewriteRule ^blog-([a-z,0-9,A-Z,_-]+)_([0-9]+)?$ inicial.php?pag=blog&acao=$1&id=$2 [NC]
+  RewriteRule ^blog-([a-z,0-9,A-Z,_-]+)-([a-z,0-9,A-Z,_-]+)?$ inicial.php?pag=blog&acao=$1&tipo=$2 [NC]
+  RewriteRule ^blog-([a-z,0-9,A-Z,_-]+)-([a-z,0-9,A-Z,_-]+)_([0-9]+)?$ inicial.php?pag=blog&acao=$1&tipo=$2&id=$3 [NC]
+  RewriteRule ^migrar?$ categorias-migrar [NC,L]
+  RewriteRule ^reajustar?$ categorias-reajustar [NC,L]
+  RewriteRule ^lixeira?$ inicial.php?pag=lixeira [NC,L]
+  RewriteRule ^lixeira-([a-z0-9-]+)-([0-9]+)?$ inicial.php?pag=lixeira&acao=$1&id=$2 [NC,L]
+  RewriteRule ^sair?$ logout.php [NC,L]
+  RewriteRule ^perfil?$ inicial.php?pag=perfil [NC,L]
+  RewriteRule ^email?$ email.php [NC,L]
+  RewriteRule ^newsletter?$ inicial.php?pag=newsletter [NC,L]
+  RewriteRule ^newsletter-([a-z0-9-]+)?$ inicial.php?pag=newsletter&acao=$1 [NC,L]
+  RewriteRule ^newsletter-([a-z,0-9,A-Z,_-]+)_([0-9]+)?$ inicial.php?pag=newsletter&acao=$1&id=$2 [NC]
+  RewriteRule ^planilha-([a-z,0-9,A-Z,_-]+)?$ modulos/planilha/conteudo.php?acao=$1 [NC]
+  RewriteRule ^clientes?$ inicial.php?pag=clientes [NC,L]
+  RewriteRule ^clientes-([a-z0-9-]+)?$ inicial.php?pag=clientes&acao=$1 [NC,L]
+  RewriteRule ^clientes-([a-z,0-9,A-Z,_-]+)_([0-9]+)?$ inicial.php?pag=clientes&acao=$1&id=$2 [NC]
+  RewriteRule ^prestador?$ inicial.php?pag=prestador [NC,L]
+  RewriteRule ^prestador-([a-z0-9-]+)?$ inicial.php?pag=prestador&acao=$1 [NC,L]
+  RewriteRule ^prestador-([a-z,0-9,A-Z,_-]+)_([0-9]+)?$ inicial.php?pag=prestador&acao=$1&id=$2 [NC]
+  RewriteRule ^pedidos?$ inicial.php?pag=pedidos [NC,L]
+  RewriteRule ^relatorio?$ inicial.php?pag=relatorio [NC,L]
+  RewriteRule ^arquivo-([a-z0-9-]+)?$ inicial.php?pag=arquivo&acao=$1 [NC,L]
+  RewriteRule ^pdf-([a-z0-9-]+)?$ modulos/relatorios/pdf.php?acao=$1 [NC,L]
+  RewriteRule ^cupons?$ inicial.php?pag=cupons [NC,L]
+  RewriteRule ^cupons-([a-z0-9-]+)?$ inicial.php?pag=cupons&acao=$1 [NC,L]
+  RewriteRule ^usuarios?$ inicial.php?pag=usuarios [NC,L]
+  RewriteRule ^usuarios-([a-z0-9-]+)?$ inicial.php?pag=usuarios&acao=$1 [NC,L]
+  RewriteRule ^usuarios-([a-z,0-9,A-Z,_-]+)_([0-9]+)?$ inicial.php?pag=usuarios&acao=$1&id=$2 [NC]
+  RewriteRule ^fabricante?$ inicial.php?pag=fabricante [NC,L]
+  RewriteRule ^fabricante-([a-z0-9-]+)?$ inicial.php?pag=fabricante&acao=$1 [NC,L]
+  RewriteRule ^fabricante-([a-z,0-9,A-Z,_-]+)_([0-9]+)?$ inicial.php?pag=fabricante&acao=$1&id=$2 [NC]
+  RewriteRule ^paginas?$ inicial.php?pag=paginas [NC,L]
+  RewriteRule ^erro?$ acesso_restrito.php [NC,L]
+  ErrorDocument 400 /erro
+  ErrorDocument 401 /erro
+  ErrorDocument 403 /erro
+  ErrorDocument 404 /erro
+  ErrorDocument 405 /erro
+  ErrorDocument 406 /erro
+  ErrorDocument 407 /erro
+  ErrorDocument 408 /erro
+  ErrorDocument 409 /erro
+  ErrorDocument 410 /erro
+  ErrorDocument 411 /erro
+  ErrorDocument 412 /erro
+  ErrorDocument 413 /erro
+  ErrorDocument 414 /erro
+  ErrorDocument 415 /erro
+  ErrorDocument 416 /erro
+  ErrorDocument 417 /erro
+  ErrorDocument 500 /erro
+  ErrorDocument 501 /erro
+  ErrorDocument 502 /erro
+  ErrorDocument 503 /erro
+  ErrorDocument 504 /erro
+  ErrorDocument 505 /erro
+</IfModule>
