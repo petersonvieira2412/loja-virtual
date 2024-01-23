@@ -1,0 +1,4 @@
+User-Agent: *
+Disallow: /dash/
+Disallow: /includes/
+Disallow: /sistema/
